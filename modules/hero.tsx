@@ -9,7 +9,7 @@ const Hero = (): JSX.Element => {
                         src={'./profile.jpeg'}/>
             </WrapItem>
             <Heading color={"gray.300"} size={"xl"}>Manuj Kathuria</Heading>
-            <Heading color={"gray.300"} size={"md"}>IT Specialist</Heading>
+            <Heading color={"gray.300"} size={"md"}>Software Engineer</Heading>
 
         </VStack>
     );

@@ -1,10 +1,13 @@
 export const Config: ConfigStruct = {
-    about: {
+    profile: {
         title: "Profile",
         content: [
-            "Multicultural technology professional with 10+ years of experience in architecture, analyzing, designing, modeling, developing, documenting, testing and deploying high-volume, high-performance event-driven applications using a wide range of tool sets.",
-            "5 years of experience in engagement, project delivery as Technical Lead and Scrum Master leading large scale complex systems integration projects using agile methodologies.",
-            "Working for the second largest Telecommunications operator in Thailand, I'm responsible for WEB & Digital platform architecture - preparing the Cloud migrations, starting the adoption of DevOps principle, modernizing the stack to embrace API, containers and microservices.",
+            "Seasoned Backend Engineer with experience in leading small teams to deliver high-quality, sustainable, and cost-conscious solutions.",
+            "Experienced in developing stateless microservices for processing high-velocity data streams in near real-time",
+            "Expertise in Golang and TypeScript",
+            "Deep understanding of the technical aspects of software development, and I have a proven track record of delivering complex projects on time and within budget",
+            "Experienced in implementing CI/CD processes to automate the deployment and testing of services, ensuring that they are released to production with high confidence",
+            "Strong believer in the DevOps philosophy and am committed to finding ways to streamline processes and automate repetitive tasks",
             "An effective communicator who can easily interact with end-users, technical teams and professionals on all levels."
         ]
     },
@@ -51,13 +54,11 @@ export const Config: ConfigStruct = {
             {
                 company: "TrueMove H",
                 location: "Bangkok, Thailand (March 2017 – Present)",
-                position: "Software Solution Architect",
+                position: "Lead Backend Developer",
                 tasks: [
-                    "Leading a transformation of current On-Premises services to cloud including the infrastructure and networking design, providing integration to Software-as-a-Service offerings.",
-                    "Starting the DevOps culture including Continuous Integration & Delivery, bringing the automated infrastructure tools to existing teams and setting guidelines and standards to promote the new software conventions.",
-                    "Act as product development expert to support and coach Agile working teams; advise working teams on product specific coding issues and help resolve technology challenges.",
-                    "Develops feasibility studies for senior management on large, complex projects.",
-                    "Led and delivered 7 projects as Scrum Master and Technical Lead for Digital Marketing Team with monthly releases."
+                    "Create, deploy, monitor, and maintain high performance and scalable Golang microservices in the production",
+                    "Identify, design, and implement internal process improvements: automating manual processes, optimizing data delivery, re-designing infrastructure for greater scalability",
+                    "Contribute to backend architectural decisions"
                 ]
             },
             {
@@ -98,7 +99,7 @@ export const Config: ConfigStruct = {
 
 
 interface ConfigStruct {
-    about: { title: string, content: string[] },
+    profile: { title: string, content: string[] },
     tech: { title: string, table: { title: string, skills: string[] }[] },
     experience:
         {

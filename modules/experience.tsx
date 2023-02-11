@@ -1,6 +1,7 @@
 import React from 'react';
 import {Badge, Box, Divider, Heading, ListItem, Text, UnorderedList, useColorModeValue, VStack} from "@chakra-ui/react";
 import {Config} from "../config";
+import Card from "../components/card";
 
 
 const Experience = (): JSX.Element => {
@@ -36,34 +37,10 @@ const Experience = (): JSX.Element => {
 export default Experience;
 
 
-interface ChildProps {
-    children?: JSX.Element | JSX.Element[]
-}
 
-const Card = ({children}: ChildProps): JSX.Element => {
-    return (
-        <VStack align={"stretch"} shadow={"base"} p={4}>
-            {children}
-        </VStack>
-    )
-}
 
-interface BadgeProps {
-    text: string
-}
 
-const StyledBadge = ({text}: BadgeProps): JSX.Element => {
-    return (
-        <Badge
-            mx={2}
-            my={1}
-            p={1}
-            bg={useColorModeValue('gray.100', 'gray.700')}
-            fontWeight={'400'}>
-            {text}
-        </Badge>
-    )
-}
+
 
 
 
