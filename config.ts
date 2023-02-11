@@ -3,49 +3,41 @@ export const Config: ConfigStruct = {
         title: "Profile",
         content: [
             "Seasoned Backend Engineer with experience in leading small teams to deliver high-quality, sustainable, and cost-conscious solutions.",
-            "Experienced in developing stateless microservices for processing high-velocity data streams in near real-time",
-            "Expertise in Golang and TypeScript",
-            "Deep understanding of the technical aspects of software development, and I have a proven track record of delivering complex projects on time and within budget",
-            "Experienced in implementing CI/CD processes to automate the deployment and testing of services, ensuring that they are released to production with high confidence",
-            "Strong believer in the DevOps philosophy and am committed to finding ways to streamline processes and automate repetitive tasks",
+            "Expertise in developing stateless microservices based backends for processing high-velocity data streams in near real-time.",
+            "Deep understanding of the technical aspects of software development, and I have a proven track record of delivering complex projects on time and within budget.",
+            "Experienced in implementing CI/CD processes to automate the deployment and testing of services, ensuring that they are released to production with high confidence.",
+            "Experienced in implementing Scrum methodologies to ensure that projects are delivered on time and within scope",
+            "Strong believer in the DevOps philosophy and am committed to finding ways to streamline processes and automate repetitive tasks.",
+            "Strong commitment to transparency and documentation, and I believe that clear communication and well-documented processes are essential for successful project delivery.",
+            "Have a strong eye for design and a passion for creating user-friendly interfaces",
+            "Always eager to take on new challenges and work with new technologies, and I believe that continuous learning and professional development are key to success in the technology industry",
             "An effective communicator who can easily interact with end-users, technical teams and professionals on all levels."
         ]
     },
     tech: {
-        title: "Technology Stack",
+        title: "Technical Expertise",
         table: [
             {
-                title: "Development",
-                skills: ["golang", "nodejs", "python", "react", "typescript", "java"]
+                title: "Languages",
+                skills: ["golang", "typescript", "IBM SPL", "Bash Scripting"]
             },
             {
                 title: "Tools",
-                skills: ["kafka", "redis", "postgres", "mariadb", "elasticsearch", "Voldemort DB"]
+                skills: ["kafka", "redis", "postgres", "elasticsearch", "React", "Web Server", "jira"]
             },
             {
-                title: "CI/CD & Automation",
-                skills: ["kubernetes", "docker", "harbor", "jenkins", "jira", "groovy", "helm"]
+                title: "Orchestration",
+                skills: ["kubernetes", "docker", "jenkins", "helm", "harbor"]
             },
             {
-                title: "Monitoring & Alerts",
-                skills: ["kibana", "prometheus", "grafana", "line", "email"]
-            },
-            {
-                title: "Maintenance",
-                skills: ["logstash", "shell scripts", "cronjobs"]
-            },
-            {
-                title: "Security",
-                skills: ["kong", "jwt", "encryption"]
+                title: "Monitoring",
+                skills: ["kibana", "prometheus", "grafana", "HTTP Clients", "Email Clients"]
             },
             {
                 title: "Documentation",
-                skills: ["confluence", "nextjs", "docsify", "markdown"]
+                skills: ["confluence", "next.js", "markdown"]
             },
-            {
-                title: "Engineering",
-                skills: ["open source", "near realtime", "stream processing", "microservices", "rest/soap api"]
-            },
+
         ]
     },
     experience: {
@@ -54,7 +46,7 @@ export const Config: ConfigStruct = {
             {
                 company: "TrueMove H",
                 location: "Bangkok, Thailand (March 2017 – Present)",
-                position: "Lead Backend Developer",
+                position: "Software Engineer Lead",
                 tasks: [
                     "Create, deploy, monitor, and maintain high performance and scalable Golang microservices in the production",
                     "Identify, design, and implement internal process improvements: automating manual processes, optimizing data delivery, re-designing infrastructure for greater scalability",
@@ -62,7 +54,8 @@ export const Config: ConfigStruct = {
                 ]
             },
             {
-                company: "IBM Thailand - DTAC",
+                company: "IBM Thailand",
+                client: "DTAC Thailand",
                 location: "Bangkok, Thailand (March 2015 – January 2017)",
                 position: "Senior Software Engineer - Backend",
                 tasks: [
@@ -74,7 +67,8 @@ export const Config: ConfigStruct = {
                 ]
             },
             {
-                company: "IBM Malaysia - Celcom",
+                company: "IBM Malaysia",
+                client: "Celcom Malaysia",
                 location: "Kuala Lumpur, Malaysia (October 2012 – January 2015)",
                 position: "Software Engineer - Backend",
                 tasks: [
@@ -84,7 +78,8 @@ export const Config: ConfigStruct = {
                 ]
             },
             {
-                company: "IBM India - Airtel",
+                company: "IBM India",
+                client: "Bharti Airtel",
                 location: "Gurgaon, India (October 2011 – September 2012)",
                 position: "Software Engineer - Backend",
                 tasks: [
@@ -105,7 +100,7 @@ interface ConfigStruct {
         {
             title: string,
             details: {
-                company: string, location: string, position: string, tasks: string[]
+                company: string, client?: string, location: string, position: string, tasks: string[]
             }[]
         }
 }

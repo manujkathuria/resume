@@ -7,7 +7,7 @@ interface ChildProps {
 
 const Card = ({children}: ChildProps): JSX.Element => {
     return (
-        <VStack align={"stretch"} shadow={"sm"} p={4} bg={"rgba(255, 255, 255, 0.5)"} rounded={"lg"}>
+        <VStack align={"stretch"} shadow={"sm"} p={6} bg={"rgba(255, 255, 255, 0.5)"} rounded={"lg"}>
             {children}
         </VStack>
     )

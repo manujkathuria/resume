@@ -1,16 +1,17 @@
 import React from 'react';
-import {Divider, Heading, ListItem, UnorderedList, VStack} from "@chakra-ui/react";
+import {Heading, ListItem, UnorderedList, VStack} from "@chakra-ui/react";
 import {Config} from "../config";
 import Card from "../components/card";
+import ResumeHeading from "../components/heading";
 
 const Profile: React.FC = () => (
-    <VStack align={"stretch"} spacing={4} my={4}>
-        <Heading size={"lg"}>{Config.profile.title}</Heading>
+    <VStack align={"stretch"} my={4}>
+        <ResumeHeading title={Config.profile.title}/>
         <Card>
-            <UnorderedList px={3}>
+            <UnorderedList>
                 {Config.profile.content.map((item, index) => {
                     return (
-                        <ListItem key={index} textAlign={"justify"}>{item}</ListItem>
+                        <ListItem p={2} key={index} textAlign={"justify"}>{item}</ListItem>
                     )
                 })}
             </UnorderedList>

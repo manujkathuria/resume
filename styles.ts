@@ -10,7 +10,7 @@ const config = {
             body: {
                 color: mode('gray.700', 'gray.300')(props),
                 bg: mode('gray.100', 'gray.800')(props),
-                fontSize: '14px',
+                fontSize: '15px',
             },
             ':root': {
                 '--chakra-colors-common-body_bg': mode(

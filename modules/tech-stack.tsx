@@ -1,22 +1,33 @@
 import React from 'react';
-import {Badge, Box, Divider, Flex, Heading, useColorModeValue, useMediaQuery, VStack,} from '@chakra-ui/react'
+import {Badge, Flex, Table, TableContainer, Tbody, Td, Th, Tr, useColorModeValue, VStack,} from '@chakra-ui/react'
 import {Config} from "../config";
+import ResumeHeading from "../components/heading";
+import Card from "../components/card";
 
 const TechStack: React.FC = () => {
     return (
         <VStack align={"stretch"} spacing={4} my={4}>
-            <Heading size={"lg"}>{Config.tech.title}</Heading>
-            <Divider/>
-            <VStack align={"stretch"} shadow={"base"} rounded={"md"} spacing={4} p={4}>
-                {Config.tech.table.map((val, index) => {
-                    return (
-                        <Box key={index}>
-                            <StackRow key={index} index={index} title={val.title} skills={val.skills}/>
-                            <Divider key={index + 1000}/>
-                        </Box>
-                    )
-                })}
-            </VStack>
+            <ResumeHeading title={Config.tech.title}/>
+            <Card>
+
+                <TableContainer>
+                    <Table variant='simple'>
+                        <Tbody>
+                            {
+                                Config.tech.table.map((val, index) => {
+                                    return (
+                                        <Tr key={`skill${index}`}>
+                                            <Td maxW={"5%"} as={Th}>{val.title}</Td>
+                                            <Td><StackRow skills={val.skills}/></Td>
+                                        </Tr>
+                                    )
+                                })
+                            }
+                        </Tbody>
+                    </Table>
+                </TableContainer>
+
+            </Card>
         </VStack>
     )
 };
@@ -30,11 +41,13 @@ interface BadgeProps {
 const StyledBadge = ({text}: BadgeProps): JSX.Element => {
     return (
         <Badge
+            flexBasis={"30%"}
+            textAlign={"center"}
             mx={2}
             my={1}
             p={1}
             fontSize={".9rem"}
-            bg={useColorModeValue('gray.100', 'gray.700')}
+            bg={useColorModeValue('gray.200', 'gray.700')}
             fontWeight={'400'}>
             {text}
         </Badge>
@@ -43,31 +56,16 @@ const StyledBadge = ({text}: BadgeProps): JSX.Element => {
 
 
 interface StackRowProps {
-    index: number,
-    title: string,
     skills: string[]
 }
 
 const StackRow = (p: StackRowProps) => {
-    const [isSmallDisplay] = useMediaQuery('(max-width: 800px)')
 
-    return (
-        <Box key={p.index}>
-            {
-                isSmallDisplay ?
-                    <Heading flexBasis={"15%"} color={"gray.600"} pl={1} pr={2} mb={2}
-                             size={"sm"}>{p.title}</Heading> :
-                    <></>
-            }
+        return (
             <Flex align={"center"} flexWrap={"wrap"}>
-                {
-                    !isSmallDisplay ? <Heading flexBasis={"15%"} color={"gray.600"} pl={1} pr={2} mb={2}
-                                               size={"sm"}>{p.title}
-                    </Heading> : <></>
-                }
                 {p.skills.map((skill, index) => <StyledBadge key={index} text={skill}/>)}
             </Flex>
-        </Box>
-    )
-};
+        )
+    }
+;
 
