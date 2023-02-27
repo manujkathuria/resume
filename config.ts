@@ -4,18 +4,18 @@ export const Config: ConfigStruct = {
         content: [
             "Experienced Backend Engineer with over 10 years of experience in designing, developing, and maintaining large-scale systems.",
             "Expertise in Event-driven, Stateless, DRY and Elastic microservices based backends for processing high-velocity data streams in near real-time.",
-            "Recent coding experience in Golang and TypeScript, as well as past experience in IBM Stream Processing Language, Java and C++.",
-            "Proficient in working with various databases such as Redis, Postgres, and Elasticsearch, as well as Kafka messaging system",
-            "Skilled in developing REST, gRPC and SOAP APIs",
-            "Experience with containerization technologies such as Docker and Kubernetes",
+            "Recent coding experience in Golang and TypeScript, as well as experience in IBM Stream Processing Language, Java, and C++.",
+            "Proficient in working with various databases such as Redis, Postgres, and Elasticsearch, as well as Kafka messaging system.",
+            "Skilled in developing REST, gRPC and SOAP APIs.",
+            "Experience with containerization technologies such as Docker and Kubernetes.",
             "Experienced in implementing CI/CD processes to automate the deployment and testing of services, ensuring that they are released to production with high confidence.",
             "Deep understanding of the technical aspects of software development, and I have a proven track record of delivering complex projects on time and within budget.",
-            "Experienced in using Scrum methodologies and working with project management tools such as Jira and Confluence to ensure that projects are delivered on time and within scope",
+            "Experienced in using Scrum methodologies and working with project management tools such as Jira and Confluence to ensure that projects are delivered on time and within scope.",
             "Strong believer in the DevOps philosophy and am committed to finding ways to streamline processes and automate repetitive tasks.",
-            "Strong commitment to transparency, unit-testing and documentation, as I believe that clear communication and well-documented + tested processes are essential for successful project delivery.",
-            "Have a strong eye for design and a passion for creating user-friendly interfaces",
-            "Always eager to take on new challenges and work with new technologies, and I believe that continuous learning and professional development are key to success in the technology industry",
-            "An effective communicator who can easily interact with end-users, technical teams and professionals on all levels."
+            "Strong commitment to transparency, unit-testing, and documentation, as I believe that clear communication and well-documented + tested processes are essential for successful project delivery.",
+            "Have a strong eye for design and a passion for creating user-friendly interfaces.",
+            "Always eager to take on new challenges and work with new technologies, and I believe that continuous learning and professional development are key to success in the technology industry.",
+            "An effective communicator who can easily interact with end-users, technical teams, and professionals on all levels."
         ]
     },
     tech: {
