@@ -1,6 +1,6 @@
 import React from 'react';
 import {Avatar, Box, Flex, Heading, HStack, Icon, Link, Text, Tooltip, VStack} from "@chakra-ui/react";
-import {AiFillLinkedin, AiOutlineMail} from 'react-icons/ai'
+import {AiFillLinkedin, AiOutlineFilePdf, AiOutlineMail} from 'react-icons/ai'
 
 const Hero = (): JSX.Element => {
     return (
@@ -22,7 +22,11 @@ const Hero = (): JSX.Element => {
                             <Icon boxSize={6} as={AiFillLinkedin}/>
                         </Link>
                     </Tooltip>
-
+                    <Tooltip hasArrow  label='Resume' fontSize='md'>
+                        <Link href='Resume_Manuj_Kathuria.pdf' target="_blank">
+                            <Icon boxSize={6} as={AiOutlineFilePdf}/>
+                        </Link>
+                    </Tooltip>
 
                 </HStack>
             </VStack>
