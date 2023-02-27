@@ -5,11 +5,6 @@ import Hero from "../modules/hero";
 import {Box, useMediaQuery, VStack} from "@chakra-ui/react";
 import Profile from "../modules/profile";
 import Head from 'next/head'
-import ZoomableImage from "../components/zoomableImage";
-import mypic from '../asset/test.jpeg'
-import Simple from "../modules/projects";
-import Certifications from "../modules/certifications";
-
 
 export default function Home() {
     const [isSmallDisplay] = useMediaQuery('(max-width: 800px)')
