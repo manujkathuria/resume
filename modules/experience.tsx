@@ -13,9 +13,10 @@ const Experience = (): JSX.Element => {
                 return (
                     <Card key={index}>
                         <Heading size={"md"}>{val.company}</Heading>
-                        {val?.client ? <Heading size={"xs"}>Client: {val.client}</Heading> : <></>}
+
                         <VStack align={"stretch"} spacing={0}>
-                            <Text as='cite'>Position: {val.position}</Text>
+                            {val?.client ? <Text as='cite'>Client: {val.client}</Text> : <></>}
+                            <Text as='cite'>Role: {val.role}</Text>
                             <Text as='cite'>Location: {val.location}</Text>
                         </VStack>
                         <Box p={1}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Heading, ListItem, UnorderedList, VStack} from "@chakra-ui/react";
+import {ListItem, UnorderedList, VStack} from "@chakra-ui/react";
 import {Config} from "../config";
 import Card from "../components/card";
 import ResumeHeading from "../components/heading";

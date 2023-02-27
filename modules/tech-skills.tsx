@@ -4,7 +4,7 @@ import {Config} from "../config";
 import ResumeHeading from "../components/heading";
 import Card from "../components/card";
 
-const TechStack: React.FC = () => {
+const TechSkills: React.FC = () => {
     return (
         <VStack align={"stretch"} spacing={4} my={4}>
             <ResumeHeading title={Config.tech.title}/>
@@ -17,7 +17,7 @@ const TechStack: React.FC = () => {
                                 Config.tech.table.map((val, index) => {
                                     return (
                                         <Tr key={`skill${index}`}>
-                                            <Td maxW={"5%"} as={Th}>{val.title}</Td>
+                                            <Td p={0} m={0}  as={Th}>{val.title}</Td>
                                             <Td><StackRow skills={val.skills}/></Td>
                                         </Tr>
                                     )
@@ -32,19 +32,19 @@ const TechStack: React.FC = () => {
     )
 };
 
-export default TechStack;
+export default TechSkills;
 
 interface BadgeProps {
     text: string
 }
 
 const StyledBadge = ({text}: BadgeProps): JSX.Element => {
+
     return (
         <Badge
-            flexBasis={"30%"}
             textAlign={"center"}
             mx={2}
-            my={1}
+            my={2}
             p={1}
             fontSize={".9rem"}
             bg={useColorModeValue('gray.200', 'gray.700')}
@@ -62,7 +62,7 @@ interface StackRowProps {
 const StackRow = (p: StackRowProps) => {
 
         return (
-            <Flex align={"center"} flexWrap={"wrap"}>
+            <Flex alignItems={"center"} flexWrap={"wrap"}>
                 {p.skills.map((skill, index) => <StyledBadge key={index} text={skill}/>)}
             </Flex>
         )

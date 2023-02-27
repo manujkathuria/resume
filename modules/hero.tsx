@@ -1,5 +1,5 @@
 import React from 'react';
-import {Avatar, Heading, VStack, WrapItem} from "@chakra-ui/react";
+import {Avatar, Heading, Text, VStack, WrapItem} from "@chakra-ui/react";
 
 const Hero = (): JSX.Element => {
     return (
@@ -9,7 +9,7 @@ const Hero = (): JSX.Element => {
                         src={'./profile.jpeg'}/>
             </WrapItem>
             <Heading color={"gray.300"} size={"xl"}>Manuj Kathuria</Heading>
-            <Heading color={"gray.300"} size={"md"}>Software Engineer</Heading>
+            <Text color={"gray.300"} fontSize={"md"}>Software Engineer</Text>
 
         </VStack>
     );
